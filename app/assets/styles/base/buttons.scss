@@ -1,0 +1,29 @@
+.button {
+  cursor: pointer;
+  width: fit-content;
+  border: unset;
+  outline: unset;
+  text-decoration: unset;
+
+  &.button--primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 16px 32px;
+    background: linear-gradient(to right in oklab, rgb(212, 175, 55) 0%, rgb(255, 215, 0) 100%);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    transition: .3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(212, 175, 55, 0.5) 0px 0px 30px 0px;
+    }
+  }
+
+  &.button--secondary {
+
+  }
+}

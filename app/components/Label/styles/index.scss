@@ -1,0 +1,27 @@
+.label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 10px;
+  border-radius: 16px;
+  border: 1px solid color-mix(in oklab, #d4af37 30%, transparent);
+  background: linear-gradient(to right, oklab(0.766529 -0.00252706 0.138662 / 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+  font-size: 14px;
+  line-height: 20px;
+  color: rgb(212, 175, 55);
+  width: fit-content;
+  transition: .3s ease;
+  cursor: pointer;
+
+  svg {
+    transition: .3s ease;
+  }
+
+  &:hover {
+    transform: translateY(-10px);
+
+    svg {
+      transform: scale(1.2);
+    }
+  }
+}

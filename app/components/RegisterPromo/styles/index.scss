@@ -1,0 +1,105 @@
+.register-promo {
+  width: 100%;
+  min-height: 500px;
+
+  @media (max-width: 1200px) {
+    min-height: unset;
+  }
+}
+
+.register-promo__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  margin-top: 64px;
+
+  @media (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.register-promo__block {
+  padding: 24px;
+  width: 100%;
+  background: linear-gradient(to right bottom in oklab, rgb(26, 20, 16) 0%, rgb(10, 10, 10) 100%);
+  border: 1px solid oklab(0.766529 -0.00252706 0.138662 / 0.2);
+  border-radius: 16px;
+  color: #FFF;
+}
+
+.register-promo__block-title {
+  font-size: 20px;
+  line-height: 28px;
+  color: rgb(212, 175, 55);
+  margin: 0;
+  justify-self: flex-start;
+}
+
+.register-promo__advantages {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  gap: 16px;
+}
+
+.register-promo-advantage {
+  display: flex;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #FFF;
+  gap: 12px;
+}
+
+.register-promo-advantage__check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right bottom in oklab, rgb(212, 175, 55) 0%, rgb(255, 215, 0) 100%);
+  max-width: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  flex-grow: 1;
+
+  svg {
+    width: 16px;
+  }
+}
+
+.register-promo__register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+
+  .register-promo__btn {
+    animation: register-btn 3s infinite linear;
+
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .register-promo__btn {
+      animation: unset;
+    }
+  }
+}
+
+.register-promo__timer {
+  margin: auto;
+
+  p {
+    color: #FFF;
+  }
+
+  .timer {
+    font-size: 40px;
+    line-height: 46px;
+    color: #fff;
+  }
+}
