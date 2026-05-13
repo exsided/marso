@@ -10,7 +10,7 @@ export const ADVANTAGES_LIST = [
     id: 1,
     icon: ShieldOutline,
     title: 'Гарантия качества',
-    description: '100% оригинальная продукция от официальных дистрибьюторов'
+    description: 'Сертифицированная продукция. Ароматы с QR-кодом'
   },
   {
     id: 2,
@@ -21,8 +21,8 @@ export const ADVANTAGES_LIST = [
   {
     id: 3,
     icon: MedalOutline,
-    title: 'Лучшие бренды',
-    description: 'Эксклюзивная коллекция мировых парфюмерных домов'
+    title: 'Лучшее качество',
+    description: '23% концентрации аромаэссенций в составе духов'
   },
   {
     id: 4,

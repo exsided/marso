@@ -18,7 +18,7 @@
       class="product-card__btn button button--primary"
       @click="showMore"
     >
-      Подбродней
+      Подробнее
     </button>
   </div>
 </template>

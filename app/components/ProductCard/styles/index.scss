@@ -22,7 +22,7 @@
 .product-card__preview {
   height: 200px;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 16px;
   margin-bottom: 20px;
   pointer-events: none;
