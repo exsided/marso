@@ -1,6 +1,6 @@
 export const HERO_ADVANTAGES = [
   {
-    title: '150+',
+    title: '250+',
     description: 'Ароматов'
   },
     {

@@ -31,7 +31,7 @@
     <div class="hero-promo hero__promo">
       <img
         class="hero-promo__img"
-        src="/img/img1.jpg"
+        src="/img/img1.webp"
       >
       <div class="hero-promo__label">
         Специальное предложение

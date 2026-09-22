@@ -1,6 +1,23 @@
 <template>
   <div class="product-card">
+    <div
+      v-if="blurEdges"
+      class="product-card__media"
+    >
+      <img
+        :src="preview"
+        alt=""
+        aria-hidden="true"
+        class="product-card__preview product-card__preview--blur"
+      >
+      <img
+        :src="preview"
+        :alt="title"
+        class="product-card__preview product-card__preview--soft"
+      >
+    </div>
     <img
+      v-else
       :src="preview"
       :alt="title"
       class="product-card__preview"
@@ -30,11 +47,14 @@ import { POPUP_NAMES} from '@/constats/popups';
 
 import type { Product } from '@/types/product'
 
-interface Props extends Product {}
+interface Props extends Product {
+  blurEdges?: boolean
+}
 
 const props = withDefaults(defineProps<Props>(), {
   accords: () => [],
   description: () => '',
+  blurEdges: false,
 });
 
 const popupsStore = usePopupsStore();

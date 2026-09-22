@@ -28,6 +28,42 @@
   pointer-events: none;
 }
 
+.product-card__media {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 16px;
+
+  .product-card__preview {
+    width: auto;
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+}
+
+.product-card__preview--blur {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) scale(1.05);
+  filter: blur(14px);
+  opacity: .8;
+}
+
+.product-card__preview--soft {
+  position: relative;
+  $fade: linear-gradient(to right, transparent, #000 14%, #000 86%, transparent);
+  $fade-y: linear-gradient(to bottom, transparent, #000 14%, #000 86%, transparent);
+
+  -webkit-mask-image: $fade, $fade-y;
+  mask-image: $fade, $fade-y;
+  -webkit-mask-composite: source-in;
+  mask-composite: intersect;
+}
+
 .product-card__code {
   font-size: 16px;
   line-height: 24px;

@@ -123,5 +123,20 @@ export const ACCORDS_VOCABULARY = {
     background: 'rgb(255, 148, 222)',
     color: 'rgb(255, 255, 255)',
   },
-
+  'жёлтые цветы': {
+    background: 'rgb(253, 252, 247)',
+    color: 'rgb(0, 0, 0)',
+  },
+  'какао': {
+    background: 'rgb(153, 120, 83)',
+    color: 'rgb(255, 255, 255)',
+  },
+  'ирис': {
+    background: 'rgb(204, 151, 254)',
+    color: 'rgb(0, 0, 0)',
+  },
+  'малиновый': {
+    background: 'rgb(176, 1, 73)',
+    color: 'rgb(255, 255, 255)',
+  },
 }

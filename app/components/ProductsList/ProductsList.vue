@@ -19,6 +19,7 @@
         :code="item.code"
         :description="item.description"
         :accords="item.accords"
+        :blur-edges="blurEdges || item.blurEdges"
       />
     </div>
   </section>
@@ -31,11 +32,13 @@ import type { Product } from '@/types/product';
 interface Props {
   title: string;
   items: Product[];
+  blurEdges?: boolean;
 }
 
 withDefaults(defineProps<Props>(), {
   title: '',
-  items: () => []
+  items: () => [],
+  blurEdges: false
 });
 </script>
 

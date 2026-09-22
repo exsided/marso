@@ -5,5 +5,6 @@ export const HEADER_LINKS = [
   {name: 'Авторские духи', path: '/#authors_perfum'},
   {name: 'Мужские духи', path: '/#mens_perfume'},
   {name: 'Женские духи', path: '/#womans_perfume'},
-  {name: 'Автопарфюм', path: '/#auto_perfume'},
+  {name: 'Парфюмерия для дома', path: '/#auto_perfume'},
+  {name: 'Персональный уход', path: '/#personal_care'},
 ]

@@ -5,4 +5,5 @@ export type Product = {
   code: string
   description?: string,
   accords?: string[]
+  blurEdges?: boolean
 };

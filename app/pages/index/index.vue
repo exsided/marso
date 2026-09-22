@@ -7,6 +7,7 @@
       id="authors_perfum"
       title="Авторские <span>духи</span>"
       :items="INDEX_AUTHORS_PERFUME_LIST"
+      blur-edges
     />
     <products-list
       id="mens_perfume"
@@ -20,8 +21,13 @@
     />
     <products-list
       id="auto_perfume"
-      title="Автопарфюм"
+      title="Парфюмерия <span>для дома</span>"
       :items="INDEX_AUTO_PERFUME_LIST"
+    />
+    <products-list
+      id="personal_care"
+      title="Персональный <span>уход</span>"
+      :items="INDEX_PERSONAL_CARE_LIST"
     />
     <contacts-section />
     <div></div>
@@ -36,7 +42,7 @@ import ProductsList from '@/components/ProductsList/ProductsList.vue';
 import ContactsSection from '@/pages/index/components/ContactsSection/ContactsSection.vue';
 
 import {ADVANTAGES_LIST} from '@/pages/index/entities/advantagesList.ts';
-import {INDEX_AUTHORS_PERFUME_LIST, INDEX_MENS_PERFUME_LIST, INDEX_WOMANS_PERFUME_LIST, INDEX_AUTO_PERFUME_LIST} from '@/constats/products.ts';
+import {INDEX_AUTHORS_PERFUME_LIST, INDEX_MENS_PERFUME_LIST, INDEX_WOMANS_PERFUME_LIST, INDEX_AUTO_PERFUME_LIST, INDEX_PERSONAL_CARE_LIST} from '@/constats/products.ts';
 </script>
 
 <style src="./styles/index.scss" lang="scss" />

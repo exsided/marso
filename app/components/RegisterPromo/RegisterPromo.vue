@@ -18,7 +18,10 @@
           <timer />
         </div>
         <div class="register-promo__btn">
-          <a class="button button--primary">
+          <a
+            class="button button--primary"
+            :href="CONTACTS_RIGISTER_LINK"
+          >
             Зарегистрироваться
           </a>
         </div>
@@ -45,6 +48,7 @@
 <script setup lang="ts">
 import CheckSvg from '@/assets/svg/check.svg'
 
+import { CONTACTS_RIGISTER_LINK } from '@/constats/contacts';
 import {REGISTER_PROMO_ADVANTAGES} from './entities/advantages';
 import Timer from '@/components/Timer/Timer.vue';
 </script>
